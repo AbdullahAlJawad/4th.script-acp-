@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Glenn Maxwell</title></head>
+    <body>
+        <p id="demo1"></p>
+        <p id="result"></p>
+        <script>
+            var cube={
+             cube_name:"MegaMinx",
+             price:1000,
+             company:"GANCube",
+             type:"Magnetic",
+             best_time:15,
+             cube_age:3.5
+            };
+            document.getElementById("demo1").innerHTML="My cube name is " + cube.cube_name + ". It's price is " + cube.price + ". It's basically " + cube.company + " company's cube. " + " It's also called " + cube.type + "cube. " + " My personal best time with this cube is " + cube.best_time + " seconds. " + "This cube age is " + cube.cube_age; 
+
+            var value = Math.abs(80);
+document.write("Demo1 Test Value:" + value +"<br>");
+
+var value = Math.acos(1);
+document.write("Demo2 Test Value:" + value +"<br>");
+
+var value = Math.asin(-1);
+document.write("Demo3 Test Value:" + value +"<br>");
+
+var value = Math.atan(5);
+document.write("Demo4 Test Value:" + value +"<br>");
+   
+function findmax(){
+    var i;
+    var max=0;
+    for(i=0;i<arguments.length;i++)
+    {
+        if (arguments[i] > max)
+        {
+            max=arguments[i];
+        }
+    }
+    return max;
+}
+document.getElementById("result").innerHTML=findmax(22,32,25,11,16,5,9,19,24);
+        </script>
+    </body>
+</html>
